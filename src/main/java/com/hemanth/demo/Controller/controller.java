@@ -16,6 +16,7 @@ import com.hemanth.demo.dao.DeletedObjectRepo;
 import com.hemanth.demo.dao.ObjectRepo;
 import com.hemanth.demo.model.DeletedEmployee;
 import com.hemanth.demo.model.Employee;
+import com.hemanth.demo.model.Login;
 
 
 
@@ -30,6 +31,11 @@ DeletedObjectRepo deletedrepo;
 
 @RequestMapping("/")
 public String home() {
+	return "Home.jsp";
+}
+
+@RequestMapping("/home")
+public String Home() {
 	return "Home.jsp";
 }
 
@@ -137,4 +143,18 @@ public void deleteperminent(@RequestBody DeletedEmployee obj) {
 		System.out.print("the error occured is :"+e.getMessage());
 	}
 }
+
+@CrossOrigin(origins = "http://localhost:3000")
+@PostMapping("login")
+public void login(@RequestBody Login cred) {
+	
+	System.out.println("the email is  :"+cred.getEmail() + "the password is :"+cred.getPassword());
+}
+
+
+
+
+
+
+
 }

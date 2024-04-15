@@ -26,6 +26,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
+		<!--security-->
+		<!--<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>-->
+		
+		<!--spring boot security test-->
+		<!--<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>-->
+		
 		<!-- this is tomcat jasper-->
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
 <dependency>

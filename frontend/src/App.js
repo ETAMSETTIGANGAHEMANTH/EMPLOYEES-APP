@@ -5,6 +5,7 @@ import RootlayOut from './RootlayOut';
 import AddEmployees from './components/addemployees/AddEmployees';
 import Employees  from './components/employees/Employees';
 import RemovedEmployees from './components/removedemployees/RemovedEmployees';
+import Login from './components/login/Login';
 
 function App() {
 	const router = createBrowserRouter([{
@@ -26,6 +27,10 @@ function App() {
 			{
 				path : '/removedemployees',
 				element:<RemovedEmployees />
+			},
+			{
+				path:'/login',
+				element : <Login/>
 			}
 		]
 	}])
